@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">White Light Labs</title>
+  <desc id="desc">A white beam passing through a prism and separating into a spectrum, set against a deep navy circle.</desc>
+  <defs>
+    <linearGradient id="spectrum" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff5d7a"/>
+      <stop offset=".2" stop-color="#ffb84d"/>
+      <stop offset=".4" stop-color="#f4e75c"/>
+      <stop offset=".6" stop-color="#53d6a2"/>
+      <stop offset=".8" stop-color="#55b9ff"/>
+      <stop offset="1" stop-color="#b58aff"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="disc"><circle cx="256" cy="256" r="244"/></clipPath>
+  </defs>
+  <circle cx="256" cy="256" r="244" fill="#10182b"/>
+  <g clip-path="url(#disc)">
+    <path d="M304 242 512 124v34L307 262z" fill="url(#spectrum)" opacity=".96"/>
+    <path d="M307 250 512 209v28L308 266z" fill="url(#spectrum)" opacity=".82"/>
+    <path d="M307 261 512 286v28L304 270z" fill="url(#spectrum)" opacity=".75"/>
+    <path d="M304 270 512 373v34L301 276z" fill="url(#spectrum)" opacity=".68"/>
+    <path d="M47 256h174" stroke="#fff" stroke-width="12" stroke-linecap="round" filter="url(#glow)"/>
+    <path d="M47 256h174" stroke="#fff" stroke-width="7" stroke-linecap="round"/>
+    <path d="m292 171 65 85-65 85-65-85z" fill="#fff" fill-opacity=".08" stroke="#f8fbff" stroke-width="8" stroke-linejoin="round"/>
+    <path d="m292 183 55 73-55 73-55-73z" fill="none" stroke="#dbe7ff" stroke-width="2" stroke-linejoin="round" opacity=".7"/>
+    <circle cx="292" cy="256" r="5" fill="#fff" filter="url(#glow)"/>
+  </g>
+  <circle cx="256" cy="256" r="244" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="4"/>
+</svg>
