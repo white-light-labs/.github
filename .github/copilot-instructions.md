@@ -1,0 +1,1 @@
+Follow the repository-root `AGENTS.md` before making changes. In particular, stop after opening or updating a pull request and wait for the user's explicit approval to merge that specific PR. Do not submit an approving review or enable auto-merge.
